@@ -20,18 +20,29 @@ body {
 }
 
 main {
-    background-color: var(--primary-card-bg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--primary-card-bg);
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  max-width: 75rem;
+}
+
+@media (max-width: 800px) {
+  main {
     max-width: 22rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
 }
 
 .image {
   background-color: var(--accent);
-  border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 img {
@@ -39,38 +50,72 @@ img {
   opacity: 0.8;
 }
 
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
 main h1 {
   color: var(--neutral-main-headings);
-  font-size: 2.0rem;
-  line-height: 2.5rem;
-  margin: 2rem 1rem 0  1rem;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  text-align: left;
+  margin: 2rem 2rem;
 }
 
 main p {
   color: var(--neutral-main-p);
-  margin: 1rem 2rem;
+  margin: 1rem 6rem 1rem 2rem;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  main h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    line-height: 2.5rem;
+  }
+  main p {
+    margin: 1rem;
+    text-align: center;
+  }
 }
 
 .accent {
   color: var(--accent);
 }
 
+.wrapper-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5rem 0 0;
+}
+
 .stats {
   font-family: "Inter", sans-serif;
   color: var(--neutral-main-headings);
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .wrapper-stats {
+    flex-direction: column;
+    margin: 0;
+  }
+  .stats {
+    text-align: center;
+  }
 }
 
 .stat-headings {
   color: var(--neutral-stat-headings);
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin: 0;
 }
 
-.child:last-child {
-    margin-bottom: 3rem;
-}
 .attribution {
   font-size: 11px;
   text-align: center;

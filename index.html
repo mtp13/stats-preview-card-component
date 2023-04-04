@@ -22,26 +22,39 @@
   <body>
     <main>
       <div class="image">
-        <img src="images/image-header-mobile.jpg" alt="" />
+        <picture>
+          <source
+            srcset="images/image-header-desktop.jpg"
+            media="(min-width: 800px)"
+          />
+          <img
+            src="images/image-header-mobile.jpg"
+            alt="Women coding at their desks."
+          />
+        </picture>
       </div>
-      <h1>
-        Get <span class="accent">insights</span> that help your business grow.
-      </h1>
-      <p>
-        Discover the benefits of data analytics and make better decisions
-        regarding revenue, customer experience, and overall efficiency.
-      </p>
-      <div class="child">
-        <h2 class="stats">10k+</h2>
-        <p class="stat-headings">companies</p>
-      </div>
-      <div class="child">
-        <h2 class="stats">314</h2>
-        <p class="stat-headings">templates</p>
-      </div>
-      <div class="child">
-        <h2 class="stats">12M+</h2>
-        <p class="stat-headings">queries</p>
+      <div class="content">
+        <h1>
+          Get <span class="accent">insights</span> that help your business grow.
+        </h1>
+        <p>
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="wrapper-stats">
+          <div class="child">
+            <h2 class="stats">10k+</h2>
+            <p class="stat-headings">companies</p>
+          </div>
+          <div class="child">
+            <h2 class="stats">314</h2>
+            <p class="stat-headings">templates</p>
+          </div>
+          <div class="child">
+            <h2 class="stats">12M+</h2>
+            <p class="stat-headings">queries</p>
+          </div>
+        </div>
       </div>
     </main>
 
