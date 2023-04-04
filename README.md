@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: <https://github.com/mtp13/stats-preview-card-component-main>
-- Live Site URL: <https://mike.pullen.dev/stats-preview-card-component-main/>
+- Solution URL: <https://github.com/mtp13/stats-preview-card-component>
+- Live Site URL: <https://mike.pullen.dev/stats-preview-card-component/>
 
 ## My process
 
